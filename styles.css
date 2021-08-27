@@ -1,0 +1,15 @@
+.spilt{
+    height: 100%;
+    /*position: fixed;*/
+    padding-top: 20px;
+}
+
+.left{
+    width: 20%;
+    background-color: aqua;
+}
+
+img{
+    height: 100px;
+    width: 200px;
+}
