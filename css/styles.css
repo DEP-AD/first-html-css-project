@@ -56,11 +56,12 @@ menu li{
     padding: 20px;
     text-align: center;
     cursor: pointer;
-/*     border-bottom: 1px solid lightgray;
- */}
+    
+}
 
 menu li:hover{
     color: red;
+    text-shadow: 2px 2px 2px #dcdcdc;
     border-radius: 2px;
 }
 
