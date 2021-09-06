@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Ubuntu+Condensed&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    position: sticky;
+    top : 0;
+    background-color: white; 
+    height: 100px;
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+nav{
+    position: fixed;
+    bottom: 0;
+    top: 100px;
+/*  background-color: #5a49b9;*/   
+    width: 250px;
+    border-right: 1px solid lightgray;
+}
+
+main{
+    margin-left: 250px;
+    padding: 5px;
+}
+
+p{
+    text-align: justify;
+    background-color: #f2f2fc;
+    padding: 5px;
+}
+
+footer{
+/*  background-color: tomato;*/    
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+#logo{
+    width: 250px;
+    height: 60px;
+}
+
+menu{
+    list-style: none;
+}
+
+menu li{
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+/*     border-bottom: 1px solid lightgray;
+ */}
+
+menu li:hover{
+    color: red;
+    border-radius: 2px;
+}
+
+menu.sub-menu{
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    left: 250px;
+    width: 250px;
+    top: 0;
+    border: 1px solid lightgray;
+}
+
+li.dropdown{
+    position: relative;
+}
+
+li.dropdown::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 0px;    
+    position: absolute;
+    border-left: 5px solid black;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+li.dropdown:hover .sub-menu{
+    visibility: visible;
+    color: black;
+}
